@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookishClub</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="javascript.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">📖 BookishClub</div>
+        <div class="logo"><a href="index.html">BookishClub</a></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,11 +18,32 @@
             </ul>
         </nav>
     </header>
-
-
-
+    <div class="form-container">
+        <div class="form">
+        <form class="sign-in-form">
+          <h2>Create An Account</h2>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div class="form-group">
+            <label for="password">Confirm Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </div>
+        </form>
+      </div>
     <footer>
-        <p>© 2023 BookishClub</p>
+        <p>© 2024 BookishClub</p>
         <a href="#">Terms of Service</a>
         <a href="#">Privacy Policy</a>
     </footer>

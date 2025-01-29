@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 
 /* Header */
@@ -44,19 +45,19 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background: url('bg.jpg') no-repeat center center/cover;
-    height: 400px;
+    background: url('books\ stacked.jpg') no-repeat center center/cover;
+    height: 800px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 50px;
+    background: rgba(249, 249, 249, 0.87);
+    padding: 40px;
 }
 
 .hero h1 {
@@ -70,11 +71,16 @@ header nav ul li a {
 
 .cta-button {
     background-color: #d4a5a5;
-    padding: 10px 20px;
-    color: white;
+    padding: 20px 40px;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    border-radius: 20px;
-    font-size: 1em;
+    border-radius: 30px;
+    font-size: 1.25em;
+    
+}
+
+.cta-button:hover{
+    background-color: #f8f9fa;
 }
 
 /* Featured Books */
@@ -106,17 +112,33 @@ header nav ul li a {
 .news-events {
     background-color: #fceaea;
     padding: 20px;
-    text-align: center;
+    text-align:left;
 }
 
 .events .event {
     margin-bottom: 20px;
+    display:flex;
 }
 
 .events {
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: start;
     gap: 20px;
+}
+
+.event {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event .text {
+    padding: 30px;
+}
+
+.event img {
+    width: 300px;
 }
 
 /* Footer */
@@ -132,3 +154,133 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
 }
+
+/* Sign in page */
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .form {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    padding: 60px 60px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .sign-in-form h2 {
+    text-align: center;
+    color: #d4a5a5;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #d4a5a5;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .btn {
+    display: block;
+    width: 106%;
+    background-color: #d4a5a5;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #c48a91;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .links a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #d4a5a5;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+/* join book club page */
+  .club-list {
+    padding: 20px;
+    display: grid;
+    gap: 30px;
+    min-height: 100vh;
+  }
+  
+  .club-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .club-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .club-info {
+    flex-grow: 1;
+  }
+  
+  .club-info h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .club-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .join-button {
+    background-color: #d48b8b;
+    color: #fff;
+    border: none;
+    padding: 20px 65px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .join-button:hover {
+    background-color: #b96c6c;
+  }
